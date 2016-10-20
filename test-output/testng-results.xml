@@ -1,17 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14336" started-at="2016-10-20T15:39:15Z" finished-at="2016-10-20T15:39:29Z">
+  <suite name="Default suite" duration-ms="5211" started-at="2016-10-20T18:02:40Z" finished-at="2016-10-20T18:02:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14336" started-at="2016-10-20T15:39:15Z" finished-at="2016-10-20T15:39:29Z">
+    <test name="Default test" duration-ms="5211" started-at="2016-10-20T18:02:40Z" finished-at="2016-10-20T18:02:45Z">
       <class name="myPackage.Shopping">
-        <test-method status="PASS" signature="openPage()[pri:0, instance:myPackage.Shopping@16905e]" name="openPage" is-config="true" duration-ms="5005" started-at="2016-10-20T11:39:15Z" finished-at="2016-10-20T11:39:20Z">
+        <test-method status="PASS" signature="openPage()[pri:0, instance:myPackage.Shopping@42a311]" name="openPage" is-config="true" duration-ms="4966" started-at="2016-10-20T14:02:40Z" finished-at="2016-10-20T14:02:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method status="PASS" signature="myTest()[pri:0, instance:myPackage.Shopping@16905e]" name="myTest" duration-ms="9298" started-at="2016-10-20T11:39:20Z" finished-at="2016-10-20T11:39:29Z">
+        <test-method status="FAIL" signature="myTest()[pri:0, instance:myPackage.Shopping@42a311]" name="myTest" duration-ms="21" started-at="2016-10-20T14:02:45Z" finished-at="2016-10-20T14:02:45Z">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problems: 
+	Sheet cannot be resolved to a type
+	Sheet cannot be resolved to a type
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+	Sheet cannot be resolved to a type
+	Sheet cannot be resolved to a type
+
+	at myPackage.Shopping.firstItem(Shopping.java:52)
+	at myPackage.Shopping.myTest(Shopping.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
