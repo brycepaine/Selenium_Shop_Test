@@ -1,30 +1,55 @@
 package myPackage;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Shopping {
-	public String baseUrl = "http://newtours.demoaut.com/";
-    public WebDriver driver;
+
+    
+	private WebDriver driver;
     
     @BeforeTest
-    public void setupDriver() {
-            System.setProperty("webdriver.gecko.driver", "C:\\Users\\1326590\\Desktop\\geckodriver.exe");
-            //System.setProperty("webdriver.firefox.marionette","C:\\GeckoDriver\\geckodriver.exe");
-            driver = new ChromeDriver();
+    private void openPage() {
+    	   System.out.println("opening gamestop");
+           driver = new ChromeDriver();
+           driver.get("http://www.gamestop.com/");
     }
     
-    @Test
-    public void verifyHomePageTitle() {
-            driver.get(baseUrl);
-            String expectedTitle = "Welcome: Mercury Tours";
-            String actualTitle = driver.getTitle();
-            Assert.assertEquals(actualTitle, expectedTitle);
-            driver.quit();
+    @Test 
+    private void myTest(){
+//    	driver = new ChromeDriver();
+    	
+    	firstItem();
+    	
+    	
+    }
+    
+    private void firstItem(){
+    	WebElement searchBox = driver.findElement(By.xpath("//*[@id='searchtext']"));
+    	searchBox.click();
+    	searchBox.sendKeys("grand theft auto 5");
+    	WebElement searchButton = driver.findElement(By.xpath("//*[@id='searchbutton']"));
+    	searchButton.click();
+    	WebElement addItemToCart = (new WebDriverWait(driver, 10))
+    			   .until(ExpectedConditions.elementToBeClickable(By.id("mainContentPlaceHolder_dynamicContent_ctl00_RepeaterResultFoundTemplate_ResultFoundPlaceHolder_1_ctl00_1_ctl00_1_StandardPlaceHolderTop_2_ctl00_2_rptResults_2_res_0_btnAddToCart_0")));
+    	addItemToCart.click();
+    	
+//    	WebElement table = driver.findElement(By.xpath("//*[@class = 'cart ats-cartlineitemslist']"));
+    	
+    	WebElement deleteItem = (new WebDriverWait(driver, 10))
+ 			   .until(ExpectedConditions.elementToBeClickable(By.className("ats-remove")));
+    	 
+//    	WebElement deleteItem = driver.findElement(By.className("ats-remove"));
+    	deleteItem.click();
+    	
+    	
     }
 	
 }

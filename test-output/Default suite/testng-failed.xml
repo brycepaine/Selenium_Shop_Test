@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="myPackage.myClass">
+      <class name="myPackage.Shopping">
         <methods>
-          <include name="setupDriver"/>
-          <include name="verifyHomePageTitle"/>
+          <include name="myTest"/>
+          <include name="openPage"/>
         </methods>
-      </class> <!-- myPackage.myClass -->
+      </class> <!-- myPackage.Shopping -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

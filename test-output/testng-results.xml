@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18664" started-at="2016-10-17T18:56:39Z" finished-at="2016-10-17T18:56:58Z">
+  <suite name="Default suite" duration-ms="14336" started-at="2016-10-20T15:39:15Z" finished-at="2016-10-20T15:39:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18664" started-at="2016-10-17T18:56:39Z" finished-at="2016-10-17T18:56:58Z">
-      <class name="myPackage.myClass">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:myPackage.myClass@19f379]" name="setupDriver" is-config="true" duration-ms="12428" started-at="2016-10-17T14:56:39Z" finished-at="2016-10-17T14:56:51Z">
+    <test name="Default test" duration-ms="14336" started-at="2016-10-20T15:39:15Z" finished-at="2016-10-20T15:39:29Z">
+      <class name="myPackage.Shopping">
+        <test-method status="PASS" signature="openPage()[pri:0, instance:myPackage.Shopping@16905e]" name="openPage" is-config="true" duration-ms="5005" started-at="2016-10-20T11:39:15Z" finished-at="2016-10-20T11:39:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:myPackage.myClass@19f379]" name="verifyHomePageTitle" duration-ms="6201" started-at="2016-10-17T14:56:52Z" finished-at="2016-10-17T14:56:58Z">
+        </test-method> <!-- openPage -->
+        <test-method status="PASS" signature="myTest()[pri:0, instance:myPackage.Shopping@16905e]" name="myTest" duration-ms="9298" started-at="2016-10-20T11:39:20Z" finished-at="2016-10-20T11:39:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-      </class> <!-- myPackage.myClass -->
+        </test-method> <!-- myTest -->
+      </class> <!-- myPackage.Shopping -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
