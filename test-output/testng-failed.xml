@@ -3,6 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+      <class name="myPackage.ShoppingTest">
+        <methods>
+          <include name="openPage"/>
+          <include name="myTest"/>
+        </methods>
+      </class> <!-- myPackage.ShoppingTest -->
       <class name="myPackage.ImportFromExcel">
         <methods>
           <include name="excelTest"/>
